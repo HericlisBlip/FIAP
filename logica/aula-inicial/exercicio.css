@@ -1,0 +1,83 @@
+#quadrado{
+width: 50vw;
+height: 50vh;
+background-color: red;
+
+
+
+}
+#resultado1{
+    display:none;
+}
+
+#segundoQuadrado{
+    width: 50vw;
+    height: 50vh;
+    background-color: rebeccapurple;
+    
+    
+
+}
+
+#calculos{
+    width: 50vw;
+    height: 50vh;
+    background-color: gold
+
+
+}
+
+#cotacao{
+    width: 50vw;
+    height: 50vh;
+    background-color: firebrick;
+
+
+
+}
+
+#abastecimento{
+    width: 50vw;
+    height: 50vh;
+    background-color: pink;
+
+
+
+}
+
+
+#temperatura{
+    width: 50vw;
+    height: 50vh;
+    background-color: orange;
+
+
+
+}
+
+#volume{
+    width: 50vw;
+    height: 50vh;
+    background-color: yellow;
+    
+
+
+}
+
+#prestacao{
+    width: 50vw;
+    height: 50vh;
+    background-color: blue;
+
+
+}
+
+
+#milionario{
+    width: 50vw;
+    height: 50vh;
+    background-color: green;
+
+
+
+}
