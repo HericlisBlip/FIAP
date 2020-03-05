@@ -39,22 +39,22 @@ function cota() {
     var dolar = Number(vDolar.value);
     var real = Number(vReal.value);
     var convertido = (real / dolar);
-    if (dolar > 0 && real > 0){
+    if (dolar > 0 && real > 0) {
         conversao.innerHTML = convertido.toFixed(2);
-    conversao.style.display = 'block';
+        conversao.style.display = 'block';
     }
 
 }
 
 
 
-function abastecer(){
-    var gasolina= Number(gasosa.value);
+function abastecer() {
+    var gasolina = Number(gasosa.value);
     var pagamento = Number(dinheiro.value);
-    var litro = (gasolina / pagamento).toFixed(2)
-    if(gasolina >= 1 && dinheiro >1 ){
-    abastecido.innerHTML= litro;
-    abastecido.style.display='block'
+    var litro = (gasolina / pagamento);
+    if (gasolina > 1 && dinheiro > 1) {
+        abastecido.innerHTML = litro.toFixed(2);
+        abastecido.style.display = 'block';
 
     }
 
