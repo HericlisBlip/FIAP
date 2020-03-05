@@ -6,9 +6,10 @@ background-color: red;
 
 
 }
-#resultado1{
-    display:none;
-}
+
+
+
+
 
 #segundoQuadrado{
     width: 50vw;
@@ -80,4 +81,40 @@ background-color: red;
 
 
 
+}
+#resultado1{
+    display:none;
+}
+#resultado2{
+    display:none;
+}
+
+#resultMult{
+    display:none;
+}
+#resultSoma{
+    display:none;
+}
+
+#conversao{
+    display:none;
+}
+
+#resultado5{
+    display:none;
+}
+#resultado6{
+    display:none;
+}
+#resultado7{
+    display:none;
+}
+#resultado8{
+    display:none;
+}
+#resultado9{
+    display:none;
+}
+#resultado10{
+    display:none;
 }
