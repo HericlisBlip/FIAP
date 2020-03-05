@@ -38,9 +38,9 @@ function calculo() {
 function cota(){
 var dolar = Number(vDolar.value);
 var real = Number( vReal.value);
-var conversao = (dolar / real) ;
+var convertido = (real / dolar) ;
 if (dolar >0 && real  > 0)
-conversao.innerHTML = conversao.toFixed(2) ;
+conversao.innerHTML = convertido.toFixed(2) ;
 conversao.style.display='block';
 
 
