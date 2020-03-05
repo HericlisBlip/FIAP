@@ -1,7 +1,7 @@
 function raiz() {
     var numero = Number(numQ.value);
     if (numero >= 1) {
-        resultado1.innerHTML = numero * numero;
+        resultado1.innerHTML = (numero * numero).toFixed(2);
         resultado1.style.display = 'block';
     }
 
@@ -14,7 +14,7 @@ function outraraiz() {
     var soma = numero1 + numero2 + numero3;
     var raiz = soma * soma;
     if (soma > 1) {
-        resultado2.innerHTML = raiz;
+        resultado2.innerHTML = raiz.toFixed(2);
         resultado2.style.display = 'block';
     }
 
@@ -27,8 +27,8 @@ function calculo() {
     var multi = numero1 * numero3;
     var soma = numero2 + numero4;
     if (numero1 > 0 && numero2 > 0 && numero3 > 0 && numero4 > 0) {
-        resultMult.innerHTML = multi;
-        resultSoma.innerHTML = soma;
+        resultMult.innerHTML = multi.toFixed(2);
+        resultSoma.innerHTML = soma.toFixed(2);
         resultMult.style.display = 'block';
         resultSoma.style.display = 'block';
     }
@@ -38,9 +38,9 @@ function calculo() {
 function cota(){
 var dolar = Number(vDolar.value);
 var real = Number( vReal.value);
-var conversao = dolar / real ;
-if (dolar >0 && real > 1)
-conversao.innerHTML = conversao ;
+var conversao = (dolar / real) ;
+if (dolar >0 && real  > 0)
+conversao.innerHTML = conversao.toFixed(2) ;
 conversao.style.display='block';
 
 
