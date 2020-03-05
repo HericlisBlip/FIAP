@@ -48,13 +48,13 @@ function cota() {
 
 
 
-function abastecer() {
-    var gasolina = Number(gasosa.value);
+function abastecendo(){
+    var gasolina = Number(combustivel.value);
     var pagamento = Number(dinheiro.value);
-    var litro = (gasolina / pagamento);
+    var litro = gasolina / pagamento;
     if (gasolina > 1 && dinheiro > 1) {
-        abastecido.innerHTML = litro.toFixed(2);
-        abastecido.style.display = 'block';
+        carroAbast.innerHTML = 'Olá Mundo!';
+        carroAbast.style.display = 'block';
 
     }
 

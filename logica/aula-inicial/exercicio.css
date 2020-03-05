@@ -2,7 +2,7 @@
 width: 50vw;
 height: 50vh;
 background-color: red;
-
+border : solid, 1px;
 
 
 }
@@ -100,7 +100,7 @@ background-color: red;
     display:none;
 }
 
-#abastecido{
+#carroAbast{
     display:none;
 }
 #resultado6{
