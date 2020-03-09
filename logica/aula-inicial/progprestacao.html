@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href=exercicios.css>
+    <link rel="stylesheet" type="text/css" href=exercicio.css>
     <title>Docucumento para exercicio de lógica</title>
 </head>
 <body>
     
     <div id="questao">
         
-        
+        <input type="text" id="vBoleto" placeholder="Valor do boleto"> <br>
+        <input type="text" id="dAtraso" placeholder="Dias de Atrado"><br>
+        <input type="text" id="vJuros" placeholder="Valor do juros">  <br>
+        <button onclick="prestacao()"> Calcular valor</button>     
 
         
         
@@ -37,7 +40,26 @@
     
     
     
-    <script type="text/javascript" ></script>
+    <script type="text/javascript" >
+
+function prestacao(){
+
+    var valorBoleto = Number(vBoleto.value);
+    var diaAtraso = Number(dAtraso.value);
+    var valorJuros = Number(vJuros.value);
+    var prestar = valorBoleto + (valorBoleto*(valorJuros/100)) * diaAtraso;
+
+    
+    if(valorBoleto >0 && diaAtraso > 0 && valorJuros > 0){
+
+        resultado.innerHTML = prestar;
+        resultado.style.display='block';
+
+    }
+
+    
+}
+    </script>
 </body>
 
     </html>

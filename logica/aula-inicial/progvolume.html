@@ -11,14 +11,12 @@
     <div id="questao">
         
         
+        <h1>Exercicio de volume</h1>
         
+        <input type="text" id="altura" placeholder="Insira a altura"><br>
+        <input type="text" id="valorR" placeholder="insira valor de R"><br>
         
-        
-        
-        
-
-        
-
+        <button onclick="volume()">Encontrar volume</button>
         
         
         <div id="resultado">
@@ -33,7 +31,24 @@
     
     
     <a href="progprestacao.html"><button>Proximo Exercicio</button></a>
-    <script type="text/javascript" ></script>
+    
+    <script type="text/javascript" >
+
+    function volume(){
+    var  valR = Number(valorR.value);
+    var valAltura = Number(altura.value);
+    
+    var volume = 3.14 *(valR * valR ) * valAltura;
+
+
+    if( valAltura > 0 && valR > 0){
+        resultado.innerHTML = volume;
+        resultado.style.display='block';
+    }
+    
+    
+}
+    </script>
 
 </body>
     
