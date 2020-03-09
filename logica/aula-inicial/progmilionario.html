@@ -1,45 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href=exercicio.css>
     <title>Docucumento para exercicio de lógica</title>
 </head>
-<body>
-    
-    <div id="questao">
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <div id="resultado">
-            
-            
-            
-        </div>
-        
-        
-    </div>
-    
-    
-    
-    <a href="progentregar.html"><button>Proximo Exercicio</button></a>
-    
-    <script type="text/javascript" ></script>
-    
-    
-    
-</body>
-    
-    </html>
-    
 
+<body>
+
+    <div id="questao">
+
+
+
+        <input type="text" id="vSalario" placeholder="Informe o valor do seu salário "><br>
+        <input type="text" id="vDespesas" placeholder="informe o valor das despesas"> <br>
+
+        <button onclick="milionario()">Calcular</button>
+
+
+        <div id="resultado">
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <a href="progentregar.html"><button>Proximo Exercicio</button></a>
+
+    <script type="text/javascript">
+
+        function milionario() {
+            var salario = Number(vSalario.value);
+            var despesas = Number(vDespesas.value);
+            var saldo = salario - despesas;
+            var rico =  1.000000 / saldo;
+
+            if(salario > 1 && despesas >= 0){
+
+                resultado.innerHTML= 'Você ficará rico em '+ rico.toFixed(2) + ' anos';
+                resultado.style.display='block';
+            }
+
+
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>
