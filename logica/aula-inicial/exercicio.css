@@ -1,4 +1,4 @@
-#quadrado{
+#questao{
 width: 50vw;
 height: 50vh;
 background-color: red;
@@ -7,114 +7,8 @@ border : solid, 1px;
 
 }
 
+#resultado{
 
+display: none;
 
-
-
-#segundoQuadrado{
-    width: 50vw;
-    height: 50vh;
-    background-color: rebeccapurple;
-    
-    
-
-}
-
-#calculos{
-    width: 50vw;
-    height: 50vh;
-    background-color: gold
-
-
-}
-
-#cotacao{
-    width: 50vw;
-    height: 50vh;
-    background-color: firebrick;
-
-
-
-}
-
-#abastecimento{
-    width: 50vw;
-    height: 50vh;
-    background-color: pink;
-
-
-
-}
-
-
-#temperatura{
-    width: 50vw;
-    height: 50vh;
-    background-color: orange;
-
-
-
-}
-
-#volume{
-    width: 50vw;
-    height: 50vh;
-    background-color: yellow;
-    
-
-
-}
-
-#prestacao{
-    width: 50vw;
-    height: 50vh;
-    background-color: blue;
-
-
-}
-
-
-#milionario{
-    width: 50vw;
-    height: 50vh;
-    background-color: green;
-
-
-
-}
-#resultado1{
-    display:none;
-}
-#resultado2{
-    display:none;
-}
-
-#resultMult{
-    display:none;
-}
-#resultSoma{
-    display:none;
-}
-
-#conversao{
-    display:none;
-}
-
-#carroAbast{
-    display:none;
-}
-#resultado6{
-    display:none;
-}
-#resultado7{
-    display:none;
-}
-#resultado8{
-    display:none;
-}
-#resultado9{
-    display:none;
-}
-#resultado10{
-    display:none;
 }

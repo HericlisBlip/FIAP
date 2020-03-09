@@ -1,8 +1,8 @@
 function raiz() {
     var numero = Number(numQ.value);
     if (numero >= 1) {
-        resultado1.innerHTML = (numero * numero).toFixed(2);
-        resultado1.style.display = 'block';
+        resultado.innerHTML = (numero * numero).toFixed(2);
+        resultado.style.display = 'block';
     }
 
 }
@@ -14,8 +14,8 @@ function outraraiz() {
     var soma = numero1 + numero2 + numero3;
     var raiz = soma * soma;
     if (soma > 1) {
-        resultado2.innerHTML = raiz.toFixed(2);
-        resultado2.style.display = 'block';
+        resultado.innerHTML = raiz.toFixed(2);
+        resultado.style.display = 'block';
     }
 
 }
@@ -40,8 +40,8 @@ function cota() {
     var real = Number(vReal.value);
     var convertido = (real / dolar);
     if (dolar > 0 && real > 0) {
-        conversao.innerHTML = convertido.toFixed(2);
-        conversao.style.display = 'block';
+        resultado.innerHTML = convertido.toFixed(2);
+        resultado.style.display = 'block';
     }
 
 }
@@ -51,10 +51,10 @@ function cota() {
 function abastecendo(){
     var gasolina = Number(combustivel.value);
     var pagamento = Number(dinheiro.value);
-    var litro = gasolina / pagamento;
+    var litro = pagamento / gasolina ;
     if (gasolina > 1 && dinheiro > 1) {
-        carroAbast.innerHTML = 'Olá Mundo!';
-        carroAbast.style.display = 'block';
+        resultado.innerHTML = litro;
+        resultado.style.display = 'block';
 
     }
 
