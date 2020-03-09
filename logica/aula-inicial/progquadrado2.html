@@ -31,7 +31,21 @@
     
     <a href="progcalculos.html"><button>Próximo Exercicio</button></a>
     
-    <script type="text/javascript" src="exercicios.js"></script>
+    <script type="text/javascript" >
+    
+    function outraraiz() {
+    var numero1 = Number(numSq.value);
+    var numero2 = Number(numSq2.value);
+    var numero3 = Number(numSq3.value);
+    var soma = numero1 + numero2 + numero3;
+    var raiz = soma * soma;
+    if (soma > 1) {
+        resultado.innerHTML = raiz.toFixed(2);
+        resultado.style.display = 'block';
+    }
+
+}
+    </script>
     
     
     

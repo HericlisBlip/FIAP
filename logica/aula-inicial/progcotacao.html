@@ -14,8 +14,8 @@
         
         
         <h1>Programação Cotação</h1>
-        <input id="dolar" type="text" placeholder="Digite valor do Dolar"><br>
-        <input  id="real" type="text" placeholder="Digite quatidade de real"> 
+        <input id="vDolar" type="text" placeholder="Digite valor do Dolar"><br>
+        <input  id="vReal" type="text" placeholder="Digite quatidade de real"> 
         <button onclick='cota()' > Conversão</button>
         
         
@@ -31,6 +31,20 @@
     
     
     <a href="progabastecimento.html"><button>Próximo Exercicio</button></a>
-    <script type="text/javascript" src="exercicios.js"></script>
+   
+   <script type="text/javascript" >
+    
+    function cota() {
+    var dolar = Number(vDolar.value);
+    var real = Number(vReal.value);
+    var convertido = (real / dolar);
+    if (dolar > 0 && real > 0) {
+        resultado.innerHTML = convertido.toFixed(2);
+        resultado.style.display = 'block';
+    }
+
+}
+
+    </script>
 </body>
 </html>

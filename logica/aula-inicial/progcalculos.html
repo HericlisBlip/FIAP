@@ -36,6 +36,24 @@
     
     
     <a href="progcotacao.html"><button>Próximo Exercicio</button></a>
-    <script type="text/javascript" src="exercicios.js"></script>
+    <script type="text/javascript" >
+    
+    function calculo() {
+    var numero1 = Number(numC.value);
+    var numero2 = Number(numC2.value);
+    var numero3 = Number(numC3.value);
+    var numero4 = Number(numC4.value);
+    var multi = numero1 * numero3;
+    var soma = numero2 + numero4;
+    if (numero1 > 0 && numero2 > 0 && numero3 > 0 && numero4 > 0) {
+        resultMult.innerHTML = multi.toFixed(2);
+        resultSoma.innerHTML = soma.toFixed(2);
+        resultMult.style.display = 'block';
+        resultSoma.style.display = 'block';
+    }
+
+}
+    
+    </script>
 </body>
     </html>

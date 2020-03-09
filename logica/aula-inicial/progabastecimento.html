@@ -15,8 +15,8 @@
         
         <h1>Programa de abastecimento</h1>
         <input id="combustivel" type="text" placeholder="Insira o valor do combustivel"><br>
-        <input id="dinheiro" type="text" placeholder="Inisira o valor para abastecer " ><br>
-        <button onclick="abastecendo()" >Compra combustivel</button>
+        <input id="dinheiro" type="text" placeholder="Inisira o valor para abastecer"><br>
+        <button onclick="abastecer()" >Compra combustivel</button>
         
         
 
@@ -34,7 +34,22 @@
     
     
     <a href="progtemperatura.html"><button>Proximo Exercicio</button></a>
-    <script type="text/javascript" src="exercicios.js"></script>
+    <script type="text/javascript">
+    
+    
+    function abastecer(){
+    var gasolina = Number(combustivel.value);
+    var pagamento = Number(dinheiro.value);
+    var litro = Number(pagamento / gasolina) ;
+    if (gasolina > 1 && pagamento > 1) {
+        resultado.innerHTML = litro.toFixed(2) + ' Litro';
+        resultado.style.display='block';
+
+    }
+
+
+}
+    </script>
     
     
 </body>
