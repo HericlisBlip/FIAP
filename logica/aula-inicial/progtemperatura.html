@@ -3,14 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href=exercicios.css>
+    <link rel="stylesheet" type="text/css" href=exercicio.css>
     <title>Docucumento para exercicio de lógica</title>
 </head>
 <body>
     
     <div id="questao">
         
-        
+        <h1>Conversão de Celsius para Fahrenheit</h1>
+
+
+
+        <input type="text" id="graus" placeholder="Digite o Grau Celsius">
+
+        <button onclick="temperatura()">Converter</button>
         
         
         
@@ -38,7 +44,24 @@
     
     <a href="progvolume.html"><button>Proximo Exercicio</button></a>
     
-    <script type="text/javascript" ></script>
+    <script type="text/javascript" >
+    
+    function temperatura(){
+var celsius = Number(graus.value);
+var fahrenheit = (9*celsius/5) + 32;
+
+if( celsius > 0){
+
+    resultado.innerHTML = fahrenheit + " Graus Fahrenheit";
+    resultado.style.display='block';
+}
+
+
+
+    }
+    
+    
+    </script>
     
 </body>
 </html>
