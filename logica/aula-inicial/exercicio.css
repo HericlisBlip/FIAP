@@ -1,11 +1,50 @@
 #questao{
 width: 50vw;
 height: 50vh;
+margin-top: 22vh;
+margin-left: 25vw;
+padding-top: 15vh;
 background-color: red;
-border : solid, 1px;
+border : solid;
+text-align:center;
 
 
 }
+
+#sobre{
+    width: 60vw;
+    height: 70vh;
+    margin-top: 18vh;
+    margin-left: 20vw;
+    padding-top: 11vh;
+    background-color: red;
+    border : solid;
+    text-align:center;
+    
+    
+}
+#proximoExerc{
+    width:15vw;
+    height:5vh;
+    margin-top: 5vw;
+    padding-top:3vh;
+    padding-left: 82vw;
+    background-color: red;
+    border: solid;
+    
+} 
+
+#apresentacao{
+    width:97vw;
+    height:7vh;
+    margin-top: 1vw;
+    padding-bottom: 2vw;;
+    text-align: center;
+    background-color: red;
+    border: solid;
+    
+} 
+
 
 #resultado{
 

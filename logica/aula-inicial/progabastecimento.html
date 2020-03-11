@@ -1,56 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href=exercicio.css>
+    <link rel="stylesheet" type="text/css" href="exercicio.css">
     <title>Docucumento para exercicio de lógica</title>
 </head>
+
 <body>
-    
+
+    <header id="apresentacao">
+        <h1>Atividade de Lógica Utilizando JavaScript</h1>
+
+    </header>
     <div id="questao">
-        
-        
-        
-        
-        <h1>Programa de abastecimento</h1>
-        <input id="combustivel" type="text" placeholder="Insira o valor do combustivel"><br>
-        <input id="dinheiro" type="text" placeholder="Inisira o valor para abastecer"><br>
-        <button onclick="abastecer()" >Compra combustivel</button>
-        
-        
 
-        
-        
-        <div id="resultado">
-            
-            
-            
+        <div id="exercicio">
+
+
+            <h1>Programa de abastecimento</h1>
+            <input id="combustivel" type="text" placeholder="Insira o valor do combustivel" autofocus><br>
+            <input id="dinheiro" type="text" placeholder="Inisira o valor para abastecer"><br>
+            <button onclick="abastecer()">Compra combustivel</button>
+
+
+
+
+
+            <div id="resultado">
+
+
+
+            </div>
+
         </div>
-        
-        
     </div>
-    
-    
-    
-    <a href="progtemperatura.html"><button>Proximo Exercicio</button></a>
+
+
+    <footer id="proximoExerc">
+        <a href="progcotacao.html"><button>Voltar</button></a>
+        <a href="progtemperatura.html"><button>Proximo Exercicio</button></a>
+
+    </footer>
     <script type="text/javascript">
-    
-    
-    function abastecer(){
-    var gasolina = Number(combustivel.value);
-    var pagamento = Number(dinheiro.value);
-    var litro = Number(pagamento / gasolina) ;
-    if (gasolina > 1 && pagamento > 1) {
-        resultado.innerHTML = litro.toFixed(2) + ' Litro';
-        resultado.style.display='block';
-
-    }
 
 
-}
+        function abastecer() {
+            var gasolina = Number(combustivel.value);
+            var pagamento = Number(dinheiro.value);
+            var litro = Number(pagamento / gasolina);
+            if (gasolina > 1 && pagamento > 1) {
+                resultado.innerHTML = litro.toFixed(2) + ' Litro';
+                resultado.style.display = 'block';
+
+            }
+
+
+        }
     </script>
-    
-    
+
+
 </body>
+
 </html>

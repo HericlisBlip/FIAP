@@ -1,65 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href=exercicio.css>
     <title>Docucumento para exercicio de lógica</title>
 </head>
+
 <body>
-    
+
+    <header id="apresentacao">
+        <h1>Atividade de Lógica Utilizando JavaScript</h1>
+
+    </header>
     <div id="questao">
-        
-        <input type="text" id="vBoleto" placeholder="Valor do boleto"> <br>
-        <input type="text" id="dAtraso" placeholder="Dias de Atrado"><br>
-        <input type="text" id="vJuros" placeholder="Valor do juros">  <br>
-        <button onclick="prestacao()"> Calcular valor</button>     
+        <div id="exercicio">
+            <h1>Programa de Calculos</h1>
 
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <div id="resultado">
-            
-            
-            
+            <input type="text" id="vBoleto" placeholder="Valor do boleto" autofocus> <br>
+            <input type="text" id="dAtraso" placeholder="Dias de Atrado"><br>
+            <input type="text" id="vJuros" placeholder="Valor do juros"> <br>
+            <button onclick="prestacao()"> Calcular valor</button>
+
+            <div id="resultado">
+
+
+
+            </div>
+
         </div>
-        
-        
     </div>
-    
-    
-    
-    <a href="progmilionario.html"><button>Proximo Exercicio</button></a>
-    
-    
-    
-    
-    <script type="text/javascript" >
 
-function prestacao(){
+    <footer id="proximoExerc">
+        <a href="progvolume.html"><button>Voltar</button></a>
+        <a href="progmilionario.html"><button>Proximo Exercicio</button></a>
 
-    var valorBoleto = Number(vBoleto.value);
-    var diaAtraso = Number(dAtraso.value);
-    var valorJuros = Number(vJuros.value);
-    var prestar = valorBoleto + (valorBoleto*(valorJuros/100)) * diaAtraso;
+    </footer>
 
-    
-    if(valorBoleto >0 && diaAtraso > 0 && valorJuros > 0){
 
-        resultado.innerHTML = prestar;
-        resultado.style.display='block';
 
-    }
+    <script type="text/javascript">
 
-    
-}
+        function prestacao() {
+
+            var valorBoleto = Number(vBoleto.value);
+            var diaAtraso = Number(dAtraso.value);
+            var valorJuros = Number(vJuros.value);
+            var prestar = valorBoleto + (valorBoleto * (valorJuros / 100)) * diaAtraso;
+
+
+            if (valorBoleto > 0 && diaAtraso > 0 && valorJuros > 0) {
+
+                resultado.innerHTML = '<br><br>Você tem que pagar R$: ' + prestar.toFixed(2);
+                resultado.style.display = 'block';
+
+            }
+
+
+        }
     </script>
 </body>
 
-    </html>
+</html>

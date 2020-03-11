@@ -1,67 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href=exercicio.css>
+    <link rel="stylesheet" type="text/css" href="exercicio.css">
     <title>Docucumento para exercicio de lógica</title>
 </head>
+
 <body>
-    
+
+    <header id="apresentacao">
+        <h1>Atividade de Lógica Utilizando JavaScript</h1>
+
+    </header>
     <div id="questao">
-        
-        <h1>Conversão de Celsius para Fahrenheit</h1>
+        <div id="exercicio">
+            <h1>Conversão de Celsius para Fahrenheit</h1>
 
 
 
-        <input type="text" id="graus" placeholder="Digite o Grau Celsius">
+            <input type="text" id="graus" placeholder="Digite o Grau Celsius" autofocus>
 
-        <button onclick="temperatura()">Converter</button>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <div id="resultado">
-            
-            
-            
+            <button onclick="temperatura()">Converter</button>
+
+
+
+
+
+
+
+
+
+
+            <div id="resultado">
+
+
+
+            </div>
+
+
         </div>
-        
-        
     </div>
 
-    
-    
-    
-    
-    
-    
-    <a href="progvolume.html"><button>Proximo Exercicio</button></a>
-    
-    <script type="text/javascript" >
-    
-    function temperatura(){
-var celsius = Number(graus.value);
-var fahrenheit = (9*celsius/5) + 32;
-
-if( celsius > 0){
-
-    resultado.innerHTML = fahrenheit + " Graus Fahrenheit";
-    resultado.style.display='block';
-}
 
 
+    <footer id="proximoExerc">
 
-    }
-    
-    
+        <a href="progabastecimento.html"><button>Voltar</button></a>
+        <a href="progvolume.html"><button>Proximo Exercicio</button></a>
+
+    </footer>
+
+
+    <script type="text/javascript">
+
+        function temperatura() {
+            var celsius = Number(graus.value);
+            var fahrenheit = (9 * celsius / 5) + 32;
+
+            if (celsius > 0) {
+
+                resultado.innerHTML = fahrenheit + " Graus Fahrenheit";
+                resultado.style.display = 'block';
+            }
+
+
+
+        }
+
+
     </script>
-    
+
 </body>
+
 </html>

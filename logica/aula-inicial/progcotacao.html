@@ -1,50 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href=exercicio.css>
     <title>Docucumento para exercicio de lógica</title>
 </head>
-<body>
-    
-    <div id="questao">
-        
-        
-        
-        
-        <h1>Programação Cotação</h1>
-        <input id="vDolar" type="text" placeholder="Digite valor do Dolar"><br>
-        <input  id="vReal" type="text" placeholder="Digite quatidade de real"> 
-        <button onclick='cota()' > Conversão</button>
-        
-        
-        <div id="resultado">
-            
-            
-            
-        </div>
-        
-        
-    </div>
-    
-    
-    
-    <a href="progabastecimento.html"><button>Próximo Exercicio</button></a>
-   
-   <script type="text/javascript" >
-    
-    function cota() {
-    var dolar = Number(vDolar.value);
-    var real = Number(vReal.value);
-    var convertido = (real / dolar);
-    if (dolar > 0 && real > 0) {
-        resultado.innerHTML = convertido.toFixed(2);
-        resultado.style.display = 'block';
-    }
 
-}
+<body>
+
+    <header id="apresentacao">
+        <h1>Atividade de Lógica Utilizando JavaScript</h1>
+
+    </header>
+
+    <div id="questao">
+
+
+        <div id="exercicio">
+
+            <h1>Programação Cotação</h1>
+            <input id="vDolar" type="text" placeholder="Digite valor do Dolar" autofocus><br>
+            <input id="vReal" type="text" placeholder="Digite quatidade de real">
+            <button onclick='cota()'> Conversão</button>
+
+
+            <div id="resultado">
+
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <footer id="proximoExerc">
+        <a href="progcalculos.html"><button>Voltar</button></a>
+        <a href="progabastecimento.html"><button>Próximo Exercicio</button></a>
+
+    </footer>
+    <script type="text/javascript">
+
+        function cota() {
+            var dolar = Number(vDolar.value);
+            var real = Number(vReal.value);
+            var convertido = (real / dolar);
+            if (dolar > 0 && real > 0) {
+                resultado.innerHTML = convertido.toFixed(2);
+                resultado.style.display = 'block';
+            }
+
+        }
 
     </script>
 </body>
+
 </html>

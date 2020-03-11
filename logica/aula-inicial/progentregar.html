@@ -1,42 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href=exercicios.css>
+    <link rel="stylesheet" type="text/css" href="exercicio.css">
     <title>Docucumento para exercicio de lógica</title>
 </head>
-<body>
-    
-    <div id="questao">
-        
-        
 
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <div id="resultado">
-            
-            
-            
+<body>
+
+    <header id="apresentacao">
+        <h1>Atividade de Lógica Utilizando JavaScript</h1>
+
+    </header>
+    <div id="questao">
+
+        <div id="exercicio">
+            <h1>Programa de  Eleição</h1>
+
+        <span>Candidato A </span> <button onclick="candidatoA()" id="candidato1">Votar no Candidato</button><br><br>
+        <span>Candidato B </span> <button onclick="candidatoB()" id="candidato2">Votar no Candidato</button><br><br>
+        <span>Candidato C </span> <button onclick="candidatoC()" id="candidato3">Votar no Candidato</button><br><br>
+        <button onclick="" id="nulo">Votar nulo</button> <button id="branco">Votar Branco</button><br><br>
+        <button onclick="eleicao()" >Total</button>
+
+
+
+            <div id="resultado">
+
+            </div>
+
         </div>
-        
-        
+
     </div>
+
+    <footer id="proximoExerc">
+        <a href="progmilionario.html"><button>Voltar</button></a>
+        <a href="entendimento.html"><button> Entendimmento </button></a>
+
+    </footer>
+
+    <script type="text/javascript">
+    
+    function eleicao(){
+        var candidatoA = Number(candidato1.value);
+        var candidatoB = Number(candidato2.value);
+        var candidatoC = Number(candidato3.value);
+        var votoNulo = Number(nulo.value);
+        var votoBranco = Number(branco.value);
+
+        if(candidatoA >= 0){
+            resultado.innerHTML= 'Olá Mundo!';
+        }
+
+
+
+
+
+    }
     
     
     
-    <a href="entendimento.html"><button> Entendimmento </button></a>
-    
-    <script type="text/javascript" ></script>
-    
+    </script>
+
 </body>
-    
-    
-    </html>
+
+
+</html>

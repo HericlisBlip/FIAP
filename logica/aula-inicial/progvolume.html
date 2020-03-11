@@ -1,56 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href=exercicio.css>
+    <link rel="stylesheet" type="text/css" href="exercicio.css">
     <title>Docucumento para exercicio de lógica</title>
 </head>
+
 <body>
-    
+    <header id="apresentacao">
+        <h1>Atividade de Lógica utilizando JavaScript</h1>
+    </header>
+
     <div id="questao">
-        
-        
-        <h1>Exercicio de volume</h1>
-        
-        <input type="text" id="altura" placeholder="Insira a altura"><br>
-        <input type="text" id="valorR" placeholder="insira valor de R"><br>
-        
-        <button onclick="volume()">Encontrar volume</button>
-        
-        
-        <div id="resultado">
+        <div id="exercicio">
 
-            
-            
+            <h1>Exercicio de volume</h1>
+
+            <input type="text" id="altura" placeholder="Insira a altura" autofocus><br>
+            <input type="text" id="valorR" placeholder="insira valor de R"><br>
+
+            <button onclick="volume()">Encontrar volume</button>
+
+
+            <div id="resultado">
+
+
+
+            </div>
+
         </div>
-        
-        
     </div>
-    
-    
-    
-    <a href="progprestacao.html"><button>Proximo Exercicio</button></a>
-    
-    <script type="text/javascript" >
+    <footer id="proximoExerc">
+        <a href="progtemperatura.html"><button>Voltar</button></a>
 
-    function volume(){
-    var  valR = Number(valorR.value);
-    var valAltura = Number(altura.value);
-    
-    var volume = 3.14 *(valR * valR ) * valAltura;
+        <a href="progprestacao.html"><button>Proximo Exercicio</button></a>
 
 
-    if( valAltura > 0 && valR > 0){
-        resultado.innerHTML = volume;
-        resultado.style.display='block';
-    }
-    
-    
-}
+    </footer>
+    <script type="text/javascript">
+
+        function volume() {
+            var valR = Number(valorR.value);
+            var valAltura = Number(altura.value);
+
+            var volume = 3.14 * (valR * valR) * valAltura;
+
+
+            if (valAltura > 0 && valR > 0) {
+                resultado.innerHTML = volume;
+                resultado.style.display = 'block';
+            }
+
+
+        }
     </script>
 
 </body>
-    
+
 
 </html>

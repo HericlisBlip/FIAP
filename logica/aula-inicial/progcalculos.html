@@ -1,59 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href=exercicio.css>
+    <link rel="stylesheet" type="text/css" href="exercicio.css">
     <title>Docucumento para exercicio de lógica</title>
 </head>
+
 <body>
-    
+
+    <header id="apresentacao">
+        <h1>Atividade de Lógica Utilizando JavaScript</h1>
+
+    </header>
     <div id="questao">
-        
-        
-        
-        <h1>Programa de calculos </h1>
-        
-        
-        <input id="numC" type="text"placeholder="Insira o primeiro número"><br><br>
-        <input id="numC2" type="text"placeholder="Insira o segundo número"><br><br>
-        <input id="numC3" type="text"placeholder="Insira o terceiro número"><br><br>
-        <input id="numC4" type="text"placeholder="Insira o quarto número"><br><br>
-    
-        <button onclick="calculo()">Calculos</button>
-        <div id="resultMult">
-        </div>
+
+        <div id="exercicio">
+
+            <h1>Programa de calculos </h1>
+
+            <input id="numC" type="text" placeholder="Insira o primeiro número" autofocus><br><br>
+            <input id="numC2" type="text" placeholder="Insira o segundo número"><br><br>
+            <input id="numC3" type="text" placeholder="Insira o terceiro número"><br><br>
+            <input id="numC4" type="text" placeholder="Insira o quarto número"><br><br>
+
+            <button onclick="calculo()">Calculos</button>
+
+            <div id="resultMult">
+
+            </div>
             <div id="resultSoma">
-            
+
+            </div>
         </div>
-        
-        
 
-        
+
+
     </div>
-    
-    
-    
-    
-    <a href="progcotacao.html"><button>Próximo Exercicio</button></a>
-    <script type="text/javascript" >
-    
-    function calculo() {
-    var numero1 = Number(numC.value);
-    var numero2 = Number(numC2.value);
-    var numero3 = Number(numC3.value);
-    var numero4 = Number(numC4.value);
-    var multi = numero1 * numero3;
-    var soma = numero2 + numero4;
-    if (numero1 > 0 && numero2 > 0 && numero3 > 0 && numero4 > 0) {
-        resultMult.innerHTML = multi.toFixed(2);
-        resultSoma.innerHTML = soma.toFixed(2);
-        resultMult.style.display = 'block';
-        resultSoma.style.display = 'block';
-    }
 
-}
-    
+
+    <footer id="proximoExerc">
+        <a href="progQuadrado2.html"><button>Voltar</button></a>
+        <a href="progcotacao.html"><button>Próximo Exercicio</button></a>
+
+    </footer>
+    <script type="text/javascript">
+
+        function calculo() {
+            var numero1 = Number(numC.value);
+            var numero2 = Number(numC2.value);
+            var numero3 = Number(numC3.value);
+            var numero4 = Number(numC4.value);
+            var multi = numero1 * numero3;
+            var soma = numero2 + numero4;
+            if (numero1 > 0 && numero2 > 0 && numero3 > 0 && numero4 > 0) {
+                resultMult.innerHTML = multi.toFixed(2);
+                resultSoma.innerHTML = soma.toFixed(2);
+                resultMult.style.display = 'block';
+                resultSoma.style.display = 'block';
+            }
+
+        }
+
     </script>
 </body>
-    </html>
+
+</html>
