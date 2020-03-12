@@ -1,0 +1,19 @@
+#container{
+width: 35vw;
+height: 55vh;
+margin-top: 9vw;
+margin-left: 78vh;
+
+
+
+font: 1em sans-serif;
+font-style: italic;
+color: green;
+border: solid;
+}
+
+#voltar{
+
+margin-left: 56vh;
+
+}
