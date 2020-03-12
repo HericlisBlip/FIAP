@@ -8,7 +8,6 @@ class funcionario {
 
 void recebeAumento(double aumento) {
 	this.salario = this.salario + aumento;
-	System.out.println(" Salario de R$: " + this.salario);
 
 }
 
