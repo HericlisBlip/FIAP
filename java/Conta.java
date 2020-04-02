@@ -6,15 +6,17 @@ class Conta {
     //..
 
 	void sacar(double quantidade){
-		double novoSaldo =this.saldo - quantidade;
-		this.saldo = novoSaldo;
-		System.out.println("Saque realizado R$: " + quantidade);
+		if(this.saldo >= quantidade)	{
+		System.out.println("Saque realidado com sucesso");
+		
+		}else {
+			 System.out.println("Saldo insuficiente, tente novamente");
+		}
 	}
 
 	void depositar(double quantidade){
 		this.saldo = this.saldo + quantidade;
 		System.out.println("Você depositou R$: " + quantidade);
-
 
 
 }
