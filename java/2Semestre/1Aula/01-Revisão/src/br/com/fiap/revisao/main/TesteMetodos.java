@@ -19,6 +19,7 @@ public class TesteMetodos {
 		p.andar();
 		
 		 int x= 11;
+		 
 		System.out.println(x>10?"MAior que 10":"Menor ou igual a 10");
 		
 	}

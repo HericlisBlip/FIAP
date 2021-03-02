@@ -4,6 +4,15 @@ public class Aluno extends Pessoa{
 	
 	private String rm;
 	
+	public Aluno() {
+		
+	}
+	public Aluno(String nome, String rm) {
+		super(nome);
+		this.rm = rm;
+		
+	}
+	
 	@Override
 	public void andar() {
 		System.out.println("Aluno andando...");
