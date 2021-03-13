@@ -7,7 +7,7 @@ import loja.Pedido;
 public class TesteDesconto {
 	public static void main(String[] args) {
 		CalculadoraDeDesconto calculadoraDeDesconto = new CalculadoraDeDesconto();
-		Pedido pedido = new Pedido( new BigDecimal("100"));
+		Pedido pedido = new Pedido( new BigDecimal("100"), 15);
 		
 		BigDecimal desconto = calculadoraDeDesconto.calcular(pedido);
 		
