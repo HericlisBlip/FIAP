@@ -4,6 +4,8 @@ public class Pessoa {
 	private String nome;
 	private String cpf;	
 	private int idade;
+	private Genero genero;
+	
 	
 	public Pessoa(String nome) {
 		this.nome = nome;
@@ -33,6 +35,18 @@ public class Pessoa {
 	}
 	public void setIdade(int idade) {
 		this.idade = idade;
+	}
+	/**
+	 * @return the genero
+	 */
+	public Genero getGenero() {
+		return genero;
+	}
+	/**
+	 * @param genero the genero to set
+	 */
+	public void setGenero(Genero genero) {
+		this.genero = genero;
 	}
 	
 }

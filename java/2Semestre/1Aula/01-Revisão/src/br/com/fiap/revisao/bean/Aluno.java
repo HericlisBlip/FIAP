@@ -12,6 +12,11 @@ public class Aluno extends Pessoa{
 		this.rm = rm;
 		
 	}
+	@Override
+	
+	public String toString() {
+		return getNome() + " "+ rm;
+	}
 	
 	@Override
 	public void andar() {

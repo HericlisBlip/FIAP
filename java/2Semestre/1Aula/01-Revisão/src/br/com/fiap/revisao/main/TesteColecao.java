@@ -34,7 +34,7 @@ public class TesteColecao {
 		}
 		
 		for (Aluno item : lista) {
-			System.out.println(item.getRm() + ' ' + item.getNome());
+			System.out.println(item);
 		}
 		
 		
